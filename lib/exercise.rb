@@ -7,4 +7,4 @@ require "awesome_print"
 
 
 
-p Customer.count
+ap Order.sum("amount")
