@@ -3,6 +3,8 @@ require "./lib/customer"
 require "./lib/item"
 require "./lib/orderitem"
 require "./lib/order"
+require "awesome_print"
 
-p Order.order('id DESC').limit(5)
 
+
+p Customer.select(:name, :email)
