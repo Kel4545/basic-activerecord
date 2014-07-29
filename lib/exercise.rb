@@ -7,4 +7,4 @@ require "awesome_print"
 
 
 
-ap Order.where("id = '1'").sum("amount")
+ap Order.average("amount")
