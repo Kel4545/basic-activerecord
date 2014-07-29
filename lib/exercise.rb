@@ -5,4 +5,4 @@ require "./lib/orderitem"
 require "./lib/order"
 require "awesome_print"
 
-ap Item.delete_all(name: "kayak01", description: "one person river kayak")
+ap Order.group(:customer_id).order(customer_id: :asc).sum("amount")
