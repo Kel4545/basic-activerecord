@@ -7,4 +7,4 @@ require "awesome_print"
 
 
 
-p Customer.select(:name, :email)
+p Customer.select(:id, :name, :email)
