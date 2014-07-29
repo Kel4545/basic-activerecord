@@ -7,4 +7,4 @@ require "awesome_print"
 
 
 
-ap Order.average("amount").round(2)
+ap Order.minimum("amount")
