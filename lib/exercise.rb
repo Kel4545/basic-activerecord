@@ -7,4 +7,4 @@ require "awesome_print"
 
 
 
-ap Order.minimum("amount")
+ap Order.maximum("amount")
