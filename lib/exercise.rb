@@ -5,4 +5,4 @@ require "./lib/orderitem"
 require "./lib/order"
 require "awesome_print"
 
-ap Customer.where(["state = ? and city = ?", "Colorado", "Rigobertoside"])
+ap Customer.where({state: ["Ohio", "Virginia"]})
