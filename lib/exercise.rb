@@ -4,5 +4,5 @@ require "./lib/item"
 require "./lib/orderitem"
 require "./lib/order"
 
-p Item.where("name LIKE 'boot%'")
+p Order.all
 
