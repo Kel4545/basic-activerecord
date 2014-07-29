@@ -5,6 +5,4 @@ require "./lib/orderitem"
 require "./lib/order"
 require "awesome_print"
 
-
-
-ap Order.maximum("amount")
+ap Order.select("customer_id, amount").group("customer_id").order(customer_id: :asc).minimum("amount")
